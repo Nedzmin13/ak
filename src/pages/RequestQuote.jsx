@@ -19,7 +19,7 @@ const RequestQuote = () => {
         try {
             // Invia i dati al tuo backend personale.
             // RICORDA: Sostituisci questo URL con quello che ti fornirà Render.
-            const response = await fetch("https://edili-amel-backend.onrender.com", {
+            const response = await fetch("https://edili-amel-backend.onrender.com/send-email", {
                 method: "POST",
                 body: formData,
             });
