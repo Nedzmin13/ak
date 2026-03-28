@@ -38,7 +38,7 @@ app.post('/send-email', upload.single('attachment'), async (req, res) => {
 
     try {
         const mailOptions = {
-            from: 'preventivi@vostrosito.com', // Deve essere un dominio verificato su Resend
+            from: 'onboarding@resend.dev', // Deve essere un dominio verificato su Resend
             to: process.env.TO_EMAIL, // L'email dove ricevi le richieste
             replyTo: user_email,
             subject: `Nuova Richiesta di Preventivo da ${user_name}`,
