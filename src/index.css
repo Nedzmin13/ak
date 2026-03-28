@@ -1,0 +1,49 @@
+:root {
+    --glow-color: #EA580C; /* Il nostro arancione! */
+    --glow-size: 2px;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Aggiungi questo alla fine del tuo file src/index.css */
+
+.border-glow-container {
+    position: relative;
+    /* Arrotondamento degli angoli del contenitore */
+    border-radius: 0.5rem; /* Corrisponde a 'rounded-lg' di Tailwind */
+}
+
+/* Pseudo-elemento che crea l'effetto luminoso */
+.border-glow-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* L'effetto vero e proprio: un gradiente radiale */
+    background: radial-gradient(
+            400px at var(--glow-x, 50%) var(--glow-y, 50%), /* La luce segue il mouse */
+            hsl(var(--glow-color-hsl) / 0.25), /* Colore e opacità del glow */
+            transparent,
+            transparent
+    );
+
+    /* Angoli arrotondati come il contenitore */
+    border-radius: inherit;
+
+    /* Nascosto di default, appare con una transizione */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    /* Mettiamo il glow DIETRO al contenuto */
+    z-index: -1;
+}
+
+/* Quando il mouse è sopra il contenitore, mostra il glow */
+.border-glow-container:hover::before {
+    opacity: 1;
+}
