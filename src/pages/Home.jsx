@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../components/Button';
 import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
 import { FaHammer, FaHome, FaPalette, FaShieldAlt, FaTools } from 'react-icons/fa';
 import BorderGlow from '../components/BorderGlow';
 
+// --- IMPORTAZIONI FONDAMENTALI PER LA LIGHTBOX ---
+import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+// Importazioni immagini
 import heroBg from '../assets/hero-bg.jpg';
 import aboutImg from '../assets/hero-bg.jpg';
-import proj1 from '../assets/hero-bg.jpg';
-import proj2 from '../assets/hero-bg.jpg';
-import proj3 from '../assets/hero-bg.jpg';
+import proj1 from '../assets/lavorohome1.jpg';
+import proj2 from '../assets/lavorohome2.jpg';
+import proj3 from '../assets/lavorohome3.jpg';
 
-const services = [
+
+const services =[
     { icon: <FaHammer />, title: "Ristrutturazioni", description: "Interventi completi per rinnovare ogni ambiente." },
     { icon: <FaHome />, title: "Rifacimento Tetti", description: "Coperture sicure e durevoli per la tua casa." },
     { icon: <FaPalette />, title: "Tinteggiature", description: "Finiture di alta qualità per interni ed esterni." },
@@ -19,13 +25,19 @@ const services = [
     { icon: <FaTools />, title: "Restauri", description: "Valorizziamo edifici storici e di pregio." },
 ];
 
-const projects = [
-    { image: proj1, title: "Villa Residenziale", category: "Ristrutturazione" },
-    { image: proj2, title: "Facciata Condominiale", category: "Tinteggiatura" },
-    { image: proj3, title: "Restauro Casale", category: "Restauri" },
+const projects =[
+    { image: proj1 },
+    { image: proj2 },
+    { image: proj3 },
 ];
 
 const Home = () => {
+    // Stato per gestire l'apertura della galleria
+    const [index, setIndex] = useState(-1);
+
+    // Formattiamo le immagini per la libreria
+    const slides = projects.map(p => ({ src: p.image }));
+
     return (
         <>
             {/* HERO SECTION */}
@@ -41,7 +53,7 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* SERVIZI - CON BORDER GLOW */}
+            {/* SERVIZI */}
             <section id="servizi" className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold mb-12">I Nostri Servizi</h2>
@@ -55,35 +67,48 @@ const Home = () => {
                 </div>
             </section>
 
-            {/* CHI SIAMO (PREVIEW) */}
+            {/* CHI SIAMO */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
                     <div>
-                        <img src={aboutImg} alt="Il nostro team" className="rounded-lg shadow-xl w-full"/>
+                        <img src={aboutImg} alt="Il nostro team" className="rounded-lg shadow-xl w-full aspect-video object-cover"/>
                     </div>
                     <div>
                         <h2 className="text-3xl font-bold mb-4">La Nostra Esperienza al Vostro Servizio</h2>
                         <p className="text-gray-600 mb-6">
                             Edili di Kaknjo Amel è un'impresa che poggia su basi solide di esperienza e professionalità. La nostra missione è realizzare progetti che superino le aspettative, garantendo qualità nei materiali e precisione nelle lavorazioni.
                         </p>
-
                         <Button to="/chi-siamo" variant="secondary">Scopri di più</Button>
                     </div>
                 </div>
             </section>
 
-            {/* PROGETTI (PREVIEW) */}
+            {/* PROGETTI (PREVIEW) CON LIGHTBOX */}
             <section className="py-20 bg-gray-50">
                 <div className="container mx-auto px-4 text-center">
                     <h2 className="text-3xl font-bold mb-12">I Nostri Lavori Recenti</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        {projects.map(p => <ProjectCard key={p.title} {...p} />)}
+                        {projects.map((p, i) => (
+                            <ProjectCard
+                                key={i}
+                                image={p.image}
+                                onClick={() => setIndex(i)}
+                            />
+                        ))}
                     </div>
                     <div className="mt-12">
                         <Button to="/progetti" variant="primary">Vedi Tutti i Progetti</Button>
                     </div>
                 </div>
             </section>
+
+            {/* LA LIBRERIA CHE CAUSAVA L'ERRORE ORA E' IMPORTATA CORRETTAMENTE */}
+            <Lightbox
+                index={index}
+                open={index >= 0}
+                close={() => setIndex(-1)}
+                slides={slides}
+            />
 
             {/* CTA FINALE */}
             <section className="bg-brand-orange text-white">

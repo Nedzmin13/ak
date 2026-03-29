@@ -26,14 +26,14 @@ const Contact = () => {
                                     <FiMapPin className="text-brand-orange mt-1 mr-4 flex-shrink-0" size={20} />
                                     <div>
                                         <span className="font-semibold">Indirizzo:</span><br/>
-                                        Via Prova, 123 - 00100 Roma (RM)
+                                        Via Giavenale Di Sopra 147, 36015 Schio (VI)
                                     </div>
                                 </li>
                                 <li className="flex items-start">
                                     <FiPhone className="text-brand-orange mt-1 mr-4 flex-shrink-0" size={20} />
                                     <div>
                                         <span className="font-semibold">Telefono:</span><br/>
-                                        +39 333 1234567
+                                        +393452195392
                                     </div>
                                 </li>
                                 <li className="flex items-start">
@@ -52,9 +52,14 @@ const Contact = () => {
                             <p className="text-gray-600 mb-8">
                                 Hai un progetto in mente o vuoi unirti al nostro team? Scegli il percorso giusto per te.
                             </p>
-                            <div className="w-full space-y-4">
-                                <Button to="/richiedi-preventivo" variant="primary" className="w-full">Richiedi un Preventivo</Button>
-                                <Button to="/lavora-con-noi" variant="outline-dark" className="w-full">Lavora con noi</Button>
+                            <div className="flex flex-col gap-4 w-full max-w-xs">
+                                <Button to="/richiedi-preventivo" variant="primary" className="block w-full">
+                                    Richiedi un Preventivo
+                                </Button>
+
+                                <Button to="/lavora-con-noi" variant="outline-dark" className="block w-full">
+                                    Lavora con noi
+                                </Button>
                             </div>
                         </div>
 

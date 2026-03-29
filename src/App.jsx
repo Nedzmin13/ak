@@ -9,8 +9,9 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
-import RequestQuote from './pages/RequestQuote'; // <-- NUOVO IMPORT
-import WorkWithUs from './pages/WorkWithUs.jsx';     // <-- NUOVO IMPORT
+import RequestQuote from './pages/RequestQuote';
+import WorkWithUs from './pages/WorkWithUs';
+import PrivacyPolicy from './pages/PrivacyPolicy'; // <-- NUOVO IMPORT
 
 function App() {
     return (
@@ -24,9 +25,9 @@ function App() {
                     <Route path="/servizi" element={<Services />} />
                     <Route path="/progetti" element={<Projects />} />
                     <Route path="/contatti" element={<Contact />} />
-                    {/* --- NUOVE ROTTE --- */}
                     <Route path="/richiedi-preventivo" element={<RequestQuote />} />
                     <Route path="/lavora-con-noi" element={<WorkWithUs />} />
+                    <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 </Routes>
             </main>
             <Footer />

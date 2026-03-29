@@ -46,7 +46,11 @@ const About = () => {
                         </p>
                     </div>
                     <div>
-                        <img src={teamImage} alt="Il nostro team al lavoro" className="rounded-lg shadow-xl w-full h-auto object-cover"/>
+                        <img
+                            src={teamImage}
+                            alt="Il nostro team al lavoro"
+                            className="rounded-lg shadow-xl w-3/4 h-auto object-cover"
+                        />
                     </div>
                 </div>
             </section>

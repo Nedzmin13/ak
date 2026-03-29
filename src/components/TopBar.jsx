@@ -13,7 +13,7 @@ const TopBar = () => {
                     <div className="border-l border-gray-600 h-4"></div> {/* Divisore opzionale */}
                     <a href="tel:+393331234567" className="flex items-center hover:text-brand-orange transition-colors">
                         <FiPhone className="mr-2" />
-                        <span className="hidden sm:inline">+39 333 1234567</span>
+                        <span className="hidden sm:inline">+39 3452195392</span>
                     </a>
                 </div>
             </div>
