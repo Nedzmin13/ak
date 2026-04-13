@@ -40,7 +40,7 @@ const Contact = () => {
                                     <FiMail className="text-brand-orange mt-1 mr-4 flex-shrink-0" size={20} />
                                     <div>
                                         <span className="font-semibold">Email:</span><br/>
-                                        info@edilikaknjoamel.it
+                                        info@edilidiamelkaknjo.it
                                     </div>
                                 </li>
                             </ul>

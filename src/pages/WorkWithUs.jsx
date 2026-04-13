@@ -2,7 +2,7 @@ import React from 'react';
 import { FiMail } from 'react-icons/fi';
 
 const WorkWithUs = () => {
-    const email = "risorseumane@edilikaknjoamel.it";
+    const email = "info@edilidiamelkaknjo.it";
 
     return (
         <div className="bg-gray-50 py-20">

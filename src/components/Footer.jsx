@@ -33,7 +33,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <FaEnvelope className="text-brand-orange mr-3 flex-shrink-0" />
-                                <span>info@edilikaknjoamel.it</span>
+                                <span>info@edilidiamelkaknjo.it</span>
                             </li>
                         </ul>
                     </div>

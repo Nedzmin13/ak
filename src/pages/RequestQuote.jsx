@@ -116,7 +116,7 @@ const RequestQuote = () => {
                     </h3>
                     <p className="text-gray-600">Puoi contattarci direttamente ai seguenti recapiti:</p>
                     <p className="mt-2 text-gray-800">
-                        <strong>Tel:</strong> +39 333 1234567 | <strong>Email:</strong> info@edilikaknjoamel.it
+                        <strong>Tel:</strong> +39 3452195392 | <strong>Email:</strong> info@edilidiamelkaknjo.it
                     </p>
                 </div>
             </div>
