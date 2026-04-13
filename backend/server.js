@@ -28,7 +28,7 @@ app.post('/send-email', upload.single('attachment'), async (req, res) => {
     try {
         // 2. Prepariamo l'email usando l'API di Resend
         const emailData = {
-            from: 'onboarding@resend.dev', // DEVE essere questo finché non compri un dominio tuo
+            from: 'info@edilidiamelkaknjo.it', // DEVE essere questo finché non compri un dominio tuo
             to: process.env.TO_EMAIL,      // La tua email registrata su Resend
             reply_to: user_email,          // Se clicchi "Rispondi" nell'email, scriverà al cliente
             subject: `Nuovo Preventivo: ${workType} da ${user_name}`,
