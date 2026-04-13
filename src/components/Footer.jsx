@@ -81,12 +81,15 @@ const Footer = () => {
 
                     {/* SINISTRA: Social Icons */}
                     <div className="flex items-center gap-4 w-full md:w-1/3 justify-center md:justify-start">
-                        <span className="text-sm font-semibold text-white uppercase tracking-wider">Seguici sui social</span>
-                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:scale-110">
-                            <FaFacebookF size={18} />
+                        <span
+                            className="text-sm font-semibold text-white uppercase tracking-wider">Seguici sui social</span>
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"
+                           className="bg-gray-800 p-2 rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:scale-110">
+                            <FaFacebookF size={18}/>
                         </a>
-                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:scale-110">
-                            <FaInstagram size={18} />
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                           className="bg-gray-800 p-2 rounded-full hover:bg-brand-orange hover:text-white transition-all transform hover:scale-110">
+                            <FaInstagram size={18}/>
                         </a>
                     </div>
 
@@ -96,14 +99,23 @@ const Footer = () => {
                             &copy; {new Date().getFullYear()} Edili di Kaknjo Amel. Tutti i diritti riservati.
                         </p>
                         <p>
-                            P.IVA: 123456789 <span className="mx-2">|</span>
-                            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
+                            P.IVA: 04234670240 <span className="mx-2">|</span>
+                            <Link to="/privacy-policy" className="hover:text-white transition-colors">Privacy
+                                Policy</Link>
                         </p>
                     </div>
 
                     {/* DESTRA: Powered By (serve a bilanciare visivamente i social a sinistra) */}
                     <div className="text-sm text-gray-600 text-center md:text-right w-full md:w-1/3">
-                        Powered By CodeNed
+                        Powered By{' '}
+                        <a
+                            href="https://codened.it"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-brand-orange font-bold hover:text-orange-700 hover:underline transition-colors"
+                        >
+                            CodeNed
+                        </a>
                     </div>
 
                 </div>

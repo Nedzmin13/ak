@@ -8,7 +8,7 @@ const PrivacyPolicy = () => {
 
                 <div className="space-y-6 text-gray-700 leading-relaxed">
                     <p>
-                        <strong>Ultimo aggiornamento: Marzo 2026</strong><br/>
+                        <strong>Ultimo aggiornamento: Aprile 2026</strong><br/>
                         Benvenuto sul sito di Edili di Kaknjo Amel. La tua privacy è molto importante per noi. Questa Privacy Policy ha lo scopo di descrivere in modo chiaro e trasparente le modalità di gestione del sito in riferimento al trattamento dei dati personali degli utenti che lo consultano, in conformità con il Regolamento (UE) 2016/679 (GDPR).
                     </p>
 
@@ -16,10 +16,10 @@ const PrivacyPolicy = () => {
                     <p>
                         Il Titolare del trattamento dei dati personali è:<br/>
                         <strong>Edili di Kaknjo Amel</strong><br/>
-                        Sede Legale: Via Prova, 123 - 00100 Roma (RM)<br/>
-                        P.IVA: 123456789<br/>
-                        Email di contatto: info@edilikaknjoamel.it<br/>
-                        Telefono: +39 333 1234567
+                        Sede Legale: Via Giavenale Di Sopra 147, 36015 Schio (VI)<br/>
+                        P.IVA: 04234670240<br/>
+                        Email di contatto: info@edilidiamelkaknjo.it<br/>
+                        Telefono: +393452195392
                     </p>
 
                     <h2 className="text-xl font-bold text-gray-900 mt-8">2. Tipi di Dati Trattati e Finalità</h2>
