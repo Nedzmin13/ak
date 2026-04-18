@@ -1,10 +1,17 @@
 import React from 'react';
 import { FiMail } from 'react-icons/fi';
+import { Helmet } from 'react-helmet-async';
 
 const WorkWithUs = () => {
     const email = "info@edilidiamelkaknjo.it";
 
     return (
+        <>
+            <Helmet>
+                <title>Lavora con Noi | Edili di Kaknjo Amel - Posizioni Aperte</title>
+                <meta name="description" content="Sei un professionista del settore edile? Invia la tua candidatura per unirti al team di Edili di Kaknjo Amel. Scopri come fare." />
+            </Helmet>
+
         <div className="bg-gray-50 py-20">
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
@@ -27,6 +34,7 @@ const WorkWithUs = () => {
                 </div>
             </div>
         </div>
+        </>
     );
 };
 

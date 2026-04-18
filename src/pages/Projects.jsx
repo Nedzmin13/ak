@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import ProjectCard from '../components/ProjectCard';
+import { Helmet } from 'react-helmet-async';
 
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+
+
 
 import proj1 from '../assets/lavorohome2.jpg';
 import proj2 from '../assets/lavoro6.jpeg';
@@ -54,6 +57,12 @@ const Projects = () => {
 
     return (
         <>
+
+            <Helmet>
+                <title>Progetti Realizzati | Edili di Kaknjo Amel - Galleria Lavori</title>
+                <meta name="description" content="Guarda la galleria dei nostri lavori recenti. Scopri la qualità e la cura dei dettagli nei nostri progetti di ristrutturazione e costruzione." />
+            </Helmet>
+
             <section className="bg-gray-800 text-white py-20">
                 <div className="container mx-auto text-center px-4">
                     <h1 className="text-4xl md:text-5xl font-bold">I Nostri Progetti</h1>

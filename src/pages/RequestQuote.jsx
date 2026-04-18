@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from '../components/Button';
-import { FaPhoneAlt } from 'react-icons/fa'; // Importiamo l'icona del telefono
+import { FaPhoneAlt } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const RequestQuote = () => {
     // Stato per gestire il caricamento e i messaggi di successo/errore
@@ -41,6 +42,11 @@ const RequestQuote = () => {
     };
 
     return (
+<>
+    <Helmet>
+        <title>Richiedi un Preventivo Gratuito | Edili di Kaknjo Amel</title>
+        <meta name="description" content="Compila il modulo per ricevere un preventivo dettagliato e gratuito per il tuo progetto edile. Risposta rapida e senza impegno." />
+    </Helmet>
         <div className="bg-gray-50 py-20">
             <div className="container mx-auto px-4">
                 {/* Intestazione della pagina */}
@@ -121,6 +127,7 @@ const RequestQuote = () => {
                 </div>
             </div>
         </div>
+</>
     );
 };
 

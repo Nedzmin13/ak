@@ -11,7 +11,7 @@ import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import RequestQuote from './pages/RequestQuote';
 import WorkWithUs from './pages/WorkWithUs';
-import PrivacyPolicy from './pages/PrivacyPolicy'; // <-- NUOVO IMPORT
+import PrivacyPolicy from './pages/PrivacyPolicy';
 
 function App() {
     return (

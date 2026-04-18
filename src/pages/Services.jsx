@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaHammer, FaHome, FaPalette, FaShieldAlt, FaTools } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 const servicesList = [
     {
@@ -37,6 +38,11 @@ const servicesList = [
 const Services = () => {
     return (
         <>
+            <Helmet>
+                <title>I Nostri Servizi Edili | Ristrutturazioni, Tetti, Tinteggiature</title>
+                <meta name="description" content="Elenco completo dei nostri servizi: ristrutturazioni chiavi in mano, rifacimento coperture, tinteggiature per interni ed esterni e isolamenti a cappotto." />
+            </Helmet>
+
             {/* SEZIONE TITOLO */}
             <section className="bg-gray-800 text-white py-20">
                 <div className="container mx-auto text-center px-4">

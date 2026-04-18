@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaBullseye, FaCheckCircle, FaUsers } from 'react-icons/fa';
+import { Helmet } from 'react-helmet-async';
 
 import teamImage from '../assets/hero.png';
 
@@ -25,6 +26,10 @@ const values = [
 const About = () => {
     return (
         <>
+            <Helmet>
+                <title>Chi Siamo | Edili di Kaknjo Amel - La Nostra Storia e i Nostri Valori</title>
+                <meta name="description" content="Scopri la storia, la missione e i valori di Edili di Kaknjo Amel. Passione, esperienza e qualità al servizio dell'edilizia a Roma." />
+            </Helmet>
             {/* SEZIONE TITOLO */}
             <section className="bg-gray-800 text-white py-20">
                 <div className="container mx-auto text-center px-4">

@@ -4,6 +4,7 @@ import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
 import { FaHammer, FaHome, FaPalette, FaShieldAlt, FaTools } from 'react-icons/fa';
 import BorderGlow from '../components/BorderGlow';
+import { Helmet } from 'react-helmet-async';
 
 // --- IMPORTAZIONI FONDAMENTALI PER LA LIGHTBOX ---
 import Lightbox from "yet-another-react-lightbox";
@@ -40,6 +41,11 @@ const Home = () => {
 
     return (
         <>
+            <Helmet>
+                <title>Impresa Edile Roma | Edili di Kaknjo Amel</title>
+                <meta name="description" content="Affidati a Edili di Kaknjo Amel per ristrutturazioni, rifacimento tetti e restauri. Esperienza e qualità al tuo servizio. Richiedi un preventivo gratuito." />
+            </Helmet>
+
             {/* HERO SECTION */}
             <section className="relative h-screen bg-cover bg-center flex items-center justify-center" style={{ backgroundImage: `url(${heroBg})` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>

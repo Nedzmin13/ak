@@ -1,10 +1,16 @@
 import React from 'react';
 import Button from '../components/Button';
 import { FiMail, FiPhone, FiMapPin } from 'react-icons/fi';
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
     return (
         <>
+            <Helmet>
+                <title>Contatti | Edili di Kaknjo Amel - Preventivi e Informazioni</title>
+                <meta name="description" content="Contatta Edili di Kaknjo Amel per informazioni, sopralluoghi o per richiedere un preventivo gratuito. Siamo a tua disposizione." />
+            </Helmet>
+
             {/* Sezione Titolo */}
             <section className="bg-white py-20">
                 <div className="container mx-auto text-center px-4">
