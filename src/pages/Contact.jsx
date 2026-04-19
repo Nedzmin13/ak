@@ -7,8 +7,9 @@ const Contact = () => {
     return (
         <>
             <Helmet>
-                <title>Contatti | Edili di Kaknjo Amel - Preventivi e Informazioni</title>
-                <meta name="description" content="Contatta Edili di Kaknjo Amel per informazioni, sopralluoghi o per richiedere un preventivo gratuito. Siamo a tua disposizione." />
+                <title>Contatti | Edili di Kaknjo Amel - Impresa Edile Schio</title>
+                <meta name="description"
+                      content="Contatta Edili di Kaknjo Amel per informazioni, sopralluoghi o per richiedere un preventivo gratuito. Siamo a tua disposizione." />
             </Helmet>
 
             {/* Sezione Titolo */}
