@@ -42,7 +42,7 @@ const Home = () => {
     return (
         <>
             <Helmet>
-                <title>Impresa Edile Roma | Edili di Kaknjo Amel</title>
+                <title>Impresa Edile | Edili di Kaknjo Amel</title>
                 <meta name="description" content="Affidati a Edili di Kaknjo Amel per ristrutturazioni, rifacimento tetti e restauri. Esperienza e qualità al tuo servizio. Richiedi un preventivo gratuito." />
             </Helmet>
 
